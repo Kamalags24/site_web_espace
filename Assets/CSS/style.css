@@ -221,3 +221,17 @@ figcaption {
     text-align: center;
     margin-bottom: 30px;
 }
+
+/* Jeu de thème */
+
+/* Thème clair */
+body.light {
+    background-color: white;
+    color: black;
+}
+
+/* Thème sombre */
+body.dark {
+    background-color: black;
+    color: white;
+}

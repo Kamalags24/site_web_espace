@@ -17,3 +17,23 @@
     // more.addEventListener('click', function(){
     //     moreContent.style.display = 'block';
     // });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+    
+        // Charge le thème sauvegardé, sinon utilise le thème par défaut 'light'
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        body.classList.add(savedTheme);
+    
+        // Bascule le thème lors du clic sur l'icône
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.classList.contains('light') ? 'light' : 'dark';
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.classList.remove(currentTheme);
+            body.classList.add(newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    });
+    
+    
