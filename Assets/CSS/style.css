@@ -10,6 +10,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: #6b9482;
+    color: #35414f;
+}
+
 /* Style de l'entête */
 
 header {
@@ -29,10 +39,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    margin: 0 auto;
     height: 100px;
-    width: 100%;
+    width: 50%;
     color: white;
     border: 1px solid white;
+    border-radius: 10px;
 }
 
 .navbar ul li {
@@ -40,15 +53,15 @@ header {
     
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-}
-
 header p {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+header .second-p {
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 header h1 {
@@ -93,7 +106,8 @@ main {
     height: 70px;
 }
 
-.third-section img {
+.third-section img,
+ .fourth-section img {
     width: 50%;
     height: 50%;
 }
@@ -104,11 +118,16 @@ main {
     background-color: #548975;
 }
 
-.third-section {
+.third-section,
+.fourth-section {
     display: flex;
     justify-content: space-around;
     gap: 10px;
     padding: 20px;
+}
+
+#fourth-section {
+    display: none;
 }
 
 main button {

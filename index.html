@@ -18,7 +18,7 @@
         </nav>
         <p><img src="../site_web_espace/Assets/Images/logoipsum-291.svg" alt="Logo de l'entreprise"></p>
         <h1>Welcome to our website</h1>
-        <p>Our website is awesome</p>
+        <p class="second-p">Our website is awesome</p>
     </header>
 
     <main>
@@ -66,7 +66,26 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, perferendis!</p>
             </article>
         </div>
-        <button>More</button>
+
+        <!-- Quatrième section lié au bouton More -->
+         <div style="display: none;" id="fourth-section">
+             <div class="fourth-section">
+                <article>
+                    <p><img src="./Assets/Images/Repeat.jpg" alt="Images pour chaque section"></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, perferendis!</p>
+                </article>
+                <article>
+                    <p><img src="./Assets/Images/Repeat.jpg" alt="Images pour chaque section"></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, perferendis!</p>
+                </article>
+                <article>
+                    <p><img src="./Assets/Images/Repeat.jpg" alt="Images pour chaque section"></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, perferendis!</p>
+                </article>
+             </div>
+         </div>
+        <button id="more">More</button>
+        <button id="less" style="display: none;">Less</button>
     </main>
 
     <footer>
@@ -76,22 +95,22 @@
                 <div class="footer-contact">
                     <div class="lot1">
                         <div>
-                            <p class="Icone-footer"><img src="./Assets/Images/home_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de l'adresse"></p>
-                            <figcaption>Adresse</figcaption>
+                            <p class="Icone-footer"><a href=""><img src="./Assets/Images/home_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de l'adresse"></a></p>
+                            <figcaption><a href="">Adresse</a></figcaption>
                         </div>
                         <div>
-                            <p class="Icone-footer"><img src="./Assets/Images/mode_comment_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de message"></p>
-                            <figcaption>Social</figcaption>
+                            <p class="Icone-footer"><a href=""><img src="./Assets/Images/mode_comment_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de message"></a></p>
+                            <figcaption><a href="">Social</a></figcaption>
                         </div>
                     </div>
                     <div class="lot2">
                         <div>
-                            <p class="Icone-footer"><img src="./Assets/Images/mail_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de mail"></p>
-                            <figcaption>Email</figcaption>
+                            <p class="Icone-footer"><a href=""><img src="./Assets/Images/mail_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de mail"></a></p>
+                            <figcaption><a href="">Email</a></figcaption>
                         </div>
                         <div>
-                            <p class="Icone-footer"><img src="./Assets/Images/phone_iphone_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de telephone"></p>
-                            <figcaption>Phone</figcaption>
+                            <p class="Icone-footer"><a href=""><img src="./Assets/Images/phone_iphone_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de telephone"></a></p>
+                            <figcaption><a href="">Phone</a></figcaption>
                         </div>
                     </div>
                 </div>
@@ -110,5 +129,7 @@
         <p>Copyright. All Rights Reserved</p>
 
     </footer>
+
+    <script src="./Assets/JS/script.js"></script>
 </body>
 </html>
